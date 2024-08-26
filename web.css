@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 20px;
+  
+}
+.menubar{
+     display: none; 
+    color: whitesmoke;
+    font-size: 25px;
+}
+.menubar:hover{
+    cursor: pointer;
+}  
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:blue;
+    width: 100%;
+    height: 70px;
+    
+ 
+    
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  text-align: center;
+  padding: 15px;
+
+}
+nav li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+font-size: 20px;
+
+}
+nav li a:hover{
+    background-color: palevioletred;
+transition: all 2s ease;
+}
+.logo{
+    color:white;
+    margin-top: 8px;
+}
+ .sidebar{ 
+   background-color:#ccc;
+   padding: 20px;
+   align-items: center;
+   box-shadow: 5px 5px 20px black;
+   
+width: 45%; 
+height: 100%;
+position: fixed;
+ top: 0;
+ left: -60%;  
+ /* display: none;   */
+  transition: 2s;
+z-index: 10;
+   
+}  
+
+
+.sidebar p{
+    text-align: end;
+    font-size: 30px;
+  cursor: pointer;
+
+}
+.bar{
+    padding: 5px;
+    margin: 2px;
+    list-style: none;
+}
+.bar li{
+    padding: 10px;
+    /* cursor: pointer; */
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    
+  
+
+}
+.bar a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+
+}
+.bar a:hover{
+    text-decoration: underline;
+}
+/* start */
+
+.mainsection{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: aliceblue;
+    
+}
+.maincontent{
+    margin-top: 150px;
+}
+.pic{
+    margin-top:10px ;
+    margin-right: 10px;
+
+}
+.pic img{
+    border-radius: 70%;
+    width: 400px;
+}
+
+.ani {
+    overflow: hidden; 
+    white-space: nowrap; 
+ 
+}
+.ani h1{
+    color: red;
+ font-size: 40px;
+ overflow: hidden;
+   animation: text  5s linear infinite;   
+ display:inline-block;
+ 
+ 
+
+
+} 
+@keyframes text{
+    0%{
+     width: 0%;
+    }
+    100%{
+    width:100%; 
+      
+    }
+   
+}
+.mainsection button{
+    background-color:green;
+    color: white;
+
+}
+
+.icon{
+    padding: 10px;
+    font-size: 35px;
+   cursor: pointer;
+   
+    transition: .5s;
+}
+.icon :hover{
+    transform: scale(1.1)rotate(-2deg);
+    
+}
+
+/* about section */
+.abt{
+    text-align: center;
+    top: 100px;
+}
+.aboutsection{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutme{
+margin-top: 30px;
+/* box-shadow: 5px 5px 20px black; */
+}
+.aboutme ,p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.aboutsection img{
+    border-radius: 40%;
+   
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+ }
+ .skills button{
+    padding: 4px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: rgb(44, 44, 221);
+    outline: none;
+    font-size: 21px;
+    color: white;
+   
+ }
+ /* project */
+ .glass{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    /* background-color: whitesmoke; */
+  
+}
+#projects{
+    background-color: rgb(194, 209, 209);
+}
+#projects h2{
+    text-align: center;
+color:darkblue;
+font-size: 50px;
+    
+}
+.project{
+    display: flex;
+    z-index: 1;
+    
+}
+
+
+.card img{
+height: 400px;
+width: 280px;
+border-radius: 3px; 
+
+}
+.card{
+    height: 400px;
+    margin: 30px; 
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;  
+    position: relative;
+
+ 
+  
+}
+.content{
+    width: 285px;
+height: 40px;
+padding: 3px;
+box-sizing: border-box;
+position: absolute;
+ bottom:0px;
+
+background: rgba(121, 117, 117, 0.5);
+color: white;
+
+
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
+.content h1{
+    text-align: center;
+
+}
+
+.content p{
+font-size: 15px;
+visibility: hidden;
+opacity: 0;  
+}
+.card:hover .content{
+height: 250px;
+bottom: 0px;
+
+}
+.content p{
+    opacity: 1;
+    visibility: inherit;
+}
+
+
+
+
+ /* contact  */
+#contact{
+   background: linear-gradient(rgb(223, 247, 247),rgb(236, 253, 253)); 
+   text-align: center;
+   padding: 25px;
+align-items: center;
+  
+}
+#contact h1{
+margin-top: 20px;
+}
+.contacts{
+/* background: linear-gradient(rgb(223, 247, 247),rgb(236, 253, 253)); */
+display: flex;
+justify-content:center;
+
+margin-top: 50px;
+width: 100%;
+height: 70vh;
+}
+
+.contact-content{
+    font-size: 15px;
+    /* padding: 3px; */
+ margin-left: 20px;
+}
+
+
+
+.font-icon{
+    display: flex;
+ align-items: flex-start;
+ font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.ic1 i {
+   margin-right: 60px;
+   font-size: 2.0em;
+   
+}
+.ic1  div{
+    line-height: 1.5;
+   position: relative;
+   left: 35px;
+   bottom: 38px;
+   font-size: 18px;
+  text-align: center;
+}
+.font-icon a {
+list-style: none;
+text-decoration: none;
+color: black;
+}
+
+.awsome{
+    margin-right: 500px;
+    font-size: 30px;
+}
+
+
+.email{
+margin-top: 40px;
+padding: 5px;
+
+
+
+}
+.email-input{
+  
+padding: 10px;
+margin-left: 20px;
+}
+
+
+input{
+    font-size: 15px;
+     padding: 10px; 
+    margin: 5px;
+    width: 200px;
+
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+ /* #subject  input{
+     position: relative;
+   right: 110px; 
+ 
+
+
+}  */
+textarea{
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    padding:20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 400px;
+    font-size: 15px;
+}
+#email-input button{
+    padding: 10px;
+    text-align: center;
+   
+  margin-top: 20px;
+ background:linear-gradient(darkblue,darkblue);
+ color: white;
+ border: 1px solid darkblue;
+ border-radius: 5px;
+ cursor: pointer;
+
+}
+
+
+
+
+@media screen  and (max-width:550px){
+    nav{
+        width: 100%;
+    }
+  
+    .menubar{
+        display: block;
+       margin-left: 0;
+       /* margin-left: 100px; */
+    }
+     
+    nav li a{
+        display: none;
+    }
+    .mainsection{
+        width: 100%;
+        display: grid;
+    }
+    .ani ,p{
+        font-size: 16px;
+    }
+    .pic img{
+        width: 200px;
+       
+    
+    }
+  .aboutsection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .aboutsection img{
+    width:250px;
+     margin-left: 100px;  
+
+  }
+  .aboutme h2{
+    font-size: 22px;
+  }
+ .aboutme p{
+    font-size:20px;
+    text-align: center;
+    align-items: center;
+ }
+ .skill{
+     display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    
+  
+ } 
+ .skills button{
+  display: grid; 
+grid-template-columns: 1fr;
+padding:5px;
+margin: 5px;
+font-size: 20px;
+
+  
+ }
+ .glass{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+ }
+ .project{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin-left: 0;
+ }
+
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        padding: 0 10px;
+    }
+    
+    .font-icon {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .ic1 i {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    
+    .ic1 div {
+        position: static;
+        left: auto;
+        bottom: auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .awsome {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    .email {
+        padding: 10px;
+    }
+ 
+    
+    #email-input input, 
+    #email-input textarea {
+        width:250px;
+        margin: 5px 0;
+    }
+    
+    textarea {
+        width:100px;
+        margin-top: 10px;
+    }
+    
+    #email-input button {
+        width: 50%;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+
+
